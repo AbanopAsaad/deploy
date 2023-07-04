@@ -24,7 +24,7 @@ function Chat() {
     }
 
     // Connect to the WebSocket server with the username as a query parameter
-    const newSocket = new WebSocket("ws://bomba3.pythonanywhere.com/ws/chat/");
+    const newSocket = new WebSocket("wss://bomba3.pythonanywhere.com/ws/chat/");
     setSocket(newSocket);
 
     newSocket.onopen = () => console.log("WebSocket connected");
